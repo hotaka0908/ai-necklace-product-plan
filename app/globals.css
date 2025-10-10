@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Markdown styles */
+.markdown {
+  @apply prose prose-slate max-w-none;
+  @apply prose-headings:font-bold;
+  @apply prose-h1:text-4xl prose-h1:mb-8 prose-h1:mt-12 prose-h1:border-b prose-h1:pb-4;
+  @apply prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-10;
+  @apply prose-h3:text-2xl prose-h3:mb-4 prose-h3:mt-8;
+  @apply prose-p:text-base prose-p:leading-7 prose-p:mb-4;
+  @apply prose-ul:my-6 prose-ul:list-disc prose-ul:pl-6;
+  @apply prose-ol:my-6 prose-ol:list-decimal prose-ol:pl-6;
+  @apply prose-li:mb-2;
+  @apply prose-strong:font-bold prose-strong:text-foreground;
+  @apply prose-code:bg-gray-100 prose-code:px-1 prose-code:py-0.5 prose-code:rounded;
+  @apply prose-pre:bg-gray-100 prose-pre:p-4 prose-pre:rounded-lg prose-pre:overflow-x-auto;
+  @apply prose-blockquote:border-l-4 prose-blockquote:border-gray-300 prose-blockquote:pl-4 prose-blockquote:italic;
+  @apply prose-a:text-blue-600 prose-a:underline hover:prose-a:text-blue-800;
+}
+
+@media (prefers-color-scheme: dark) {
+  .markdown {
+    @apply prose-invert;
+    @apply prose-code:bg-gray-800;
+    @apply prose-pre:bg-gray-800;
+    @apply prose-a:text-blue-400 hover:prose-a:text-blue-300;
+  }
+}
