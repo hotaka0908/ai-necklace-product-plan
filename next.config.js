@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true,
-  },
+  // Vercelでは通常のビルドを使用
 }
 
 module.exports = nextConfig
