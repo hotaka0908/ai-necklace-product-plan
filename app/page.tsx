@@ -8,14 +8,14 @@ export default function Home() {
   const markdown = fs.readFileSync(filePath, 'utf8');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800">
+    <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white dark:bg-slate-800 shadow-sm sticky top-0 z-10 border-b border-slate-200 dark:border-slate-700">
+      <header className="bg-white shadow-sm sticky top-0 z-10 border-b border-black">
         <div className="max-w-5xl mx-auto px-4 py-6">
-          <h1 className="text-3xl font-bold text-slate-900 dark:text-white">
+          <h1 className="text-3xl font-bold text-black">
             AIネックレス プロダクト計画
           </h1>
-          <p className="text-slate-600 dark:text-slate-300 mt-2">
+          <p className="text-black mt-2">
             世界中の人々の生活をもっと良くする、ウェアラブルAIデバイス
           </p>
         </div>
@@ -23,8 +23,8 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-4 py-8">
-        <div className="bg-white dark:bg-slate-800 rounded-lg shadow-lg p-8 md:p-12">
-          <article className="markdown prose prose-slate dark:prose-invert max-w-none">
+        <div className="bg-white rounded-lg shadow-lg p-8 md:p-12 border border-gray-200">
+          <article className="markdown prose prose-slate max-w-none">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {markdown}
             </ReactMarkdown>
@@ -32,7 +32,7 @@ export default function Home() {
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 text-center text-slate-600 dark:text-slate-400 pb-8">
+        <footer className="mt-12 text-center text-black pb-8">
           <p className="text-sm">
             © 2025 AI Necklace Project
           </p>
