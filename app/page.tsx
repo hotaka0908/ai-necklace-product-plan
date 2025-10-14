@@ -32,6 +32,12 @@ export default function Home() {
             </div>
             <div className="flex gap-3">
               <Link
+                href="/timeline"
+                className="px-4 py-2 border-2 border-black text-black hover:bg-gray-100 transition-colors text-sm font-bold"
+              >
+                開発遍歴
+              </Link>
+              <Link
                 href="/status"
                 className="px-4 py-2 border-2 border-black text-black hover:bg-black hover:text-white transition-colors text-sm font-bold"
               >

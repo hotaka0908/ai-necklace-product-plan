@@ -27,12 +27,20 @@ export default function StatusPage() {
               <h1 className="text-3xl font-bold text-black">開発状況</h1>
               <p className="text-black mt-2">プロジェクトの現在地を確認</p>
             </div>
-            <Link
-              href="/"
-              className="px-4 py-2 border-2 border-black text-black hover:bg-black hover:text-white transition-colors"
-            >
-              ← トップへ
-            </Link>
+            <div className="flex gap-3">
+              <Link
+                href="/timeline"
+                className="px-4 py-2 border-2 border-black text-black hover:bg-gray-100 transition-colors"
+              >
+                開発遍歴
+              </Link>
+              <Link
+                href="/"
+                className="px-4 py-2 border-2 border-black text-black hover:bg-black hover:text-white transition-colors"
+              >
+                ← トップへ
+              </Link>
+            </div>
           </div>
         </div>
       </header>
