@@ -58,7 +58,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
         </div>
 
         {/* Footer */}
-        <footer className="mt-12 text-center text-black pb-8">
+        <footer className="mt-12 text-center text-gray-3d pb-8">
           <p className="text-sm">
             © 2025 Product Planning
           </p>

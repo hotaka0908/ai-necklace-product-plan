@@ -25,7 +25,7 @@ export default function StatusPage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold text-black">開発状況</h1>
-              <p className="text-black mt-2">プロジェクトの現在地を確認</p>
+              <p className="text-gray-66 mt-2">プロジェクトの現在地を確認</p>
             </div>
             <div className="flex gap-3">
               <Link
@@ -49,19 +49,19 @@ export default function StatusPage() {
         {/* 概要セクション */}
         <section className="mb-12">
           <div className="bg-white border-2 border-black p-6">
-            <h2 className="text-2xl font-bold text-black mb-4">プロジェクト概要</h2>
+            <h2 className="text-2xl font-bold text-gray-66 mb-4">プロジェクト概要</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {developmentPhases.map((product) => (
                 <div key={product.id} className="border border-black p-4">
                   <h3 className="text-xl font-bold text-black mb-2">{product.name}</h3>
-                  <p className="text-sm text-black mb-3">現在のフェーズ: {product.phase}</p>
+                  <p className="text-sm text-gray-66 mb-3">現在のフェーズ: {product.phase}</p>
                   <div className="w-full bg-gray-200 h-4 border border-black">
                     <div
                       className="bg-black h-full"
                       style={{ width: `${product.progress}%` }}
                     />
                   </div>
-                  <p className="text-xs text-black mt-2 text-right">{product.progress}% 完了</p>
+                  <p className="text-xs text-gray-3d mt-2 text-right">{product.progress}% 完了</p>
                 </div>
               ))}
             </div>
@@ -70,23 +70,23 @@ export default function StatusPage() {
 
         {/* ソフトウェア開発状況 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-black mb-6">ソフトウェア開発</h2>
+          <h2 className="text-2xl font-bold text-gray-66 mb-6">ソフトウェア開発</h2>
           <div className="bg-white border-2 border-black p-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h3 className="font-bold text-black mb-3">リポジトリ情報</h3>
                 <dl className="space-y-2">
                   <div className="flex justify-between">
-                    <dt className="text-black">リポジトリ:</dt>
-                    <dd className="font-mono text-sm text-black">{softwareStatus.repo}</dd>
+                    <dt className="text-gray-66">リポジトリ:</dt>
+                    <dd className="font-mono text-sm text-gray-3d">{softwareStatus.repo}</dd>
                   </div>
                   <div className="flex justify-between">
-                    <dt className="text-black">ブランチ:</dt>
-                    <dd className="font-mono text-sm text-black">{softwareStatus.branch}</dd>
+                    <dt className="text-gray-66">ブランチ:</dt>
+                    <dd className="font-mono text-sm text-gray-3d">{softwareStatus.branch}</dd>
                   </div>
                   <div className="flex justify-between">
-                    <dt className="text-black">最終更新:</dt>
-                    <dd className="text-sm text-black">{softwareStatus.lastCommit}</dd>
+                    <dt className="text-gray-66">最終更新:</dt>
+                    <dd className="text-sm text-gray-3d">{softwareStatus.lastCommit}</dd>
                   </div>
                 </dl>
               </div>
@@ -94,12 +94,12 @@ export default function StatusPage() {
                 <h3 className="font-bold text-black mb-3">開発状況</h3>
                 <dl className="space-y-2">
                   <div className="flex justify-between">
-                    <dt className="text-black">オープンなIssue:</dt>
-                    <dd className="text-black">{softwareStatus.openIssues} 件</dd>
+                    <dt className="text-gray-66">オープンなIssue:</dt>
+                    <dd className="text-gray-3d">{softwareStatus.openIssues} 件</dd>
                   </div>
                   <div className="flex justify-between">
-                    <dt className="text-black">オープンなPR:</dt>
-                    <dd className="text-black">{softwareStatus.openPRs} 件</dd>
+                    <dt className="text-gray-66">オープンなPR:</dt>
+                    <dd className="text-gray-3d">{softwareStatus.openPRs} 件</dd>
                   </div>
                 </dl>
               </div>
@@ -137,7 +137,7 @@ export default function StatusPage() {
 
         {/* ハードウェア開発状況 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-black mb-6">ハードウェア開発</h2>
+          <h2 className="text-2xl font-bold text-gray-66 mb-6">ハードウェア開発</h2>
           <div className="space-y-6">
             {allBOMs.map((bom) => {
               const totalComponents = bom.components.length;
@@ -151,10 +151,10 @@ export default function StatusPage() {
                   <div className="flex justify-between items-start mb-4">
                     <div>
                       <h3 className="text-xl font-bold text-black">{bom.productName}</h3>
-                      <p className="text-sm text-black mt-1">
+                      <p className="text-sm text-gray-66 mt-1">
                         現在のフェーズ: {bom.phase}
                       </p>
-                      <p className="text-xs text-black mt-1">
+                      <p className="text-xs text-gray-3d mt-1">
                         最終更新: {bom.lastUpdated}
                       </p>
                     </div>
@@ -167,7 +167,7 @@ export default function StatusPage() {
                   </div>
 
                   <div className="mb-4">
-                    <div className="flex justify-between text-sm text-black mb-2">
+                    <div className="flex justify-between text-sm text-gray-66 mb-2">
                       <span>部品選定の進捗</span>
                       <span>
                         {decidedComponents} / {totalComponents} 完了
@@ -183,25 +183,25 @@ export default function StatusPage() {
 
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                     <div className="border border-black p-3">
-                      <div className="text-black font-bold">検討中</div>
+                      <div className="text-gray-66 font-bold">検討中</div>
                       <div className="text-2xl text-black mt-1">
                         {bom.components.filter((c) => c.status === 'considering').length}
                       </div>
                     </div>
                     <div className="border border-black p-3">
-                      <div className="text-black font-bold">決定済み</div>
+                      <div className="text-gray-66 font-bold">決定済み</div>
                       <div className="text-2xl text-black mt-1">
                         {bom.components.filter((c) => c.status === 'decided').length}
                       </div>
                     </div>
                     <div className="border border-black p-3">
-                      <div className="text-black font-bold">発注済み</div>
+                      <div className="text-gray-66 font-bold">発注済み</div>
                       <div className="text-2xl text-black mt-1">
                         {bom.components.filter((c) => c.status === 'ordered').length}
                       </div>
                     </div>
                     <div className="border border-black p-3">
-                      <div className="text-black font-bold">受領済み</div>
+                      <div className="text-gray-66 font-bold">受領済み</div>
                       <div className="text-2xl text-black mt-1">
                         {bom.components.filter((c) => c.status === 'received').length}
                       </div>
@@ -216,8 +216,8 @@ export default function StatusPage() {
         {/* コミュニティ貢献の呼びかけ */}
         <section className="mb-12">
           <div className="bg-black text-white p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">プロジェクトに貢献しませんか?</h2>
-            <p className="mb-6">
+            <h2 className="text-2xl font-bold text-white mb-4">プロジェクトに貢献しませんか?</h2>
+            <p className="text-white mb-6">
               より良い部品の提案、コードの改善、ドキュメントの充実など、
               <br />
               あなたの知識と経験でこのプロジェクトをより良くしてください。

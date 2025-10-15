@@ -9,7 +9,7 @@ export default function ContributePage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold text-black">プロジェクトへの貢献</h1>
-              <p className="text-black mt-2">あなたの力で製品をより良く</p>
+              <p className="text-gray-66 mt-2">あなたの力で製品をより良く</p>
             </div>
             <Link
               href="/"
@@ -25,8 +25,8 @@ export default function ContributePage() {
         {/* イントロ */}
         <section className="mb-12">
           <div className="bg-black text-white p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">このプロジェクトに貢献しませんか？</h2>
-            <p className="text-lg">
+            <h2 className="text-2xl font-bold text-white mb-4">このプロジェクトに貢献しませんか？</h2>
+            <p className="text-lg text-white">
               ソフトウェアとハードウェアの両面で、あなたの知識と経験が必要です。
               <br />
               一緒に世界を変える製品を作りましょう。
@@ -36,27 +36,27 @@ export default function ContributePage() {
 
         {/* 貢献方法の選択 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-black mb-6">貢献の方法</h2>
+          <h2 className="text-2xl font-bold text-gray-66 mb-6">貢献の方法</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {/* ソフトウェア */}
             <div className="border-2 border-black p-6">
               <h3 className="text-xl font-bold text-black mb-4">ソフトウェア開発</h3>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
-                  <span className="text-black mr-2">🐛</span>
-                  <span className="text-black">バグ修正</span>
+                  <span className="text-gray-66 mr-2">🐛</span>
+                  <span className="text-gray-66">バグ修正</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-black mr-2">✨</span>
-                  <span className="text-black">新機能の実装</span>
+                  <span className="text-gray-66 mr-2">✨</span>
+                  <span className="text-gray-66">新機能の実装</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-black mr-2">📝</span>
-                  <span className="text-black">ドキュメント改善</span>
+                  <span className="text-gray-66 mr-2">📝</span>
+                  <span className="text-gray-66">ドキュメント改善</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-black mr-2">🎨</span>
-                  <span className="text-black">UI/UXデザイン</span>
+                  <span className="text-gray-66 mr-2">🎨</span>
+                  <span className="text-gray-66">UI/UXデザイン</span>
                 </li>
               </ul>
               <a
@@ -74,20 +74,20 @@ export default function ContributePage() {
               <h3 className="text-xl font-bold text-black mb-4">ハードウェア開発</h3>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
-                  <span className="text-black mr-2">🔧</span>
-                  <span className="text-black">部品の提案</span>
+                  <span className="text-gray-66 mr-2">🔧</span>
+                  <span className="text-gray-66">部品の提案</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-black mr-2">💡</span>
-                  <span className="text-black">技術的アドバイス</span>
+                  <span className="text-gray-66 mr-2">💡</span>
+                  <span className="text-gray-66">技術的アドバイス</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-black mr-2">📐</span>
-                  <span className="text-black">設計の改善提案</span>
+                  <span className="text-gray-66 mr-2">📐</span>
+                  <span className="text-gray-66">設計の改善提案</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-black mr-2">🏭</span>
-                  <span className="text-black">製造方法の提案</span>
+                  <span className="text-gray-66 mr-2">🏭</span>
+                  <span className="text-gray-66">製造方法の提案</span>
                 </li>
               </ul>
               <a
@@ -104,23 +104,23 @@ export default function ContributePage() {
 
         {/* ソフトウェア貢献の詳細 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-black mb-6">ソフトウェアへの貢献</h2>
+          <h2 className="text-2xl font-bold text-gray-66 mb-6">ソフトウェアへの貢献</h2>
           <div className="bg-white border-2 border-black p-6">
             <h3 className="text-lg font-bold text-black mb-4">1. 開発環境のセットアップ</h3>
             <div className="bg-gray-50 border border-black p-4 mb-6 font-mono text-sm">
-              <div className="mb-2 text-black"># リポジトリをフォーク &amp; クローン</div>
-              <div className="mb-2 text-black">git clone https://github.com/YOUR_USERNAME/ai-necklace-product-plan.git</div>
-              <div className="mb-2 text-black">cd ai-necklace-product-plan</div>
-              <div className="mb-4 text-black">&nbsp;</div>
-              <div className="mb-2 text-black"># 依存関係のインストール</div>
-              <div className="mb-2 text-black">npm install</div>
-              <div className="mb-4 text-black">&nbsp;</div>
-              <div className="mb-2 text-black"># 開発サーバーの起動</div>
-              <div className="text-black">npm run dev</div>
+              <div className="mb-2 text-gray-66"># リポジトリをフォーク &amp; クローン</div>
+              <div className="mb-2 text-gray-3d">git clone https://github.com/YOUR_USERNAME/ai-necklace-product-plan.git</div>
+              <div className="mb-2 text-gray-3d">cd ai-necklace-product-plan</div>
+              <div className="mb-4 text-gray-3d">&nbsp;</div>
+              <div className="mb-2 text-gray-66"># 依存関係のインストール</div>
+              <div className="mb-2 text-gray-3d">npm install</div>
+              <div className="mb-4 text-gray-3d">&nbsp;</div>
+              <div className="mb-2 text-gray-66"># 開発サーバーの起動</div>
+              <div className="text-gray-3d">npm run dev</div>
             </div>
 
             <h3 className="text-lg font-bold text-black mb-4">2. プルリクエストの送り方</h3>
-            <ol className="list-decimal list-inside space-y-2 mb-6 text-black">
+            <ol className="list-decimal list-inside space-y-2 mb-6 text-gray-66">
               <li>新しいブランチを作成: <code className="bg-gray-100 px-2 py-1">git checkout -b feature/your-feature</code></li>
               <li>変更を加える</li>
               <li>コミット: <code className="bg-gray-100 px-2 py-1">git commit -m &quot;Add: 機能説明&quot;</code></li>
@@ -132,7 +132,7 @@ export default function ContributePage() {
             <div className="grid md:grid-cols-2 gap-4">
               <div className="border border-black p-4">
                 <h4 className="font-bold text-black mb-2">初心者向け</h4>
-                <ul className="space-y-1 text-sm text-black">
+                <ul className="space-y-1 text-sm text-gray-66">
                   <li>• ドキュメントの誤字修正</li>
                   <li>• READMEの改善</li>
                   <li>• コメントの追加</li>
@@ -141,7 +141,7 @@ export default function ContributePage() {
               </div>
               <div className="border border-black p-4">
                 <h4 className="font-bold text-black mb-2">中級者以上向け</h4>
-                <ul className="space-y-1 text-sm text-black">
+                <ul className="space-y-1 text-sm text-gray-66">
                   <li>• 新機能の実装</li>
                   <li>• バグ修正</li>
                   <li>• パフォーマンス改善</li>
@@ -154,7 +154,7 @@ export default function ContributePage() {
 
         {/* ハードウェア貢献の詳細 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-black mb-6">ハードウェアへの貢献</h2>
+          <h2 className="text-2xl font-bold text-gray-66 mb-6">ハードウェアへの貢献</h2>
           <div className="bg-white border-2 border-black p-6">
             <h3 className="text-lg font-bold text-black mb-4">部品提案の手順</h3>
 
@@ -165,7 +165,7 @@ export default function ContributePage() {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-black mb-1">GitHub Discussionsに移動</h4>
-                  <p className="text-sm text-black">
+                  <p className="text-sm text-gray-66">
                     <a
                       href="https://github.com/hotaka0908/ai-necklace-product-plan/discussions"
                       target="_blank"
@@ -185,7 +185,7 @@ export default function ContributePage() {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-black mb-1">新しいディスカッションを作成</h4>
-                  <p className="text-sm text-black">
+                  <p className="text-sm text-gray-66">
                     タイトル例: <code className="bg-gray-100 px-2 py-1">[部品提案] カメラ: Sony IMX500</code>
                   </p>
                 </div>
@@ -197,7 +197,7 @@ export default function ContributePage() {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-black mb-1">以下の情報を含める</h4>
-                  <ul className="text-sm text-black space-y-1 mt-2">
+                  <ul className="text-sm text-gray-66 space-y-1 mt-2">
                     <li>• 対象製品 (AIネックレス / 扇子型モニター)</li>
                     <li>• 部品カテゴリ</li>
                     <li>• 製品名、メーカー、型番</li>
@@ -215,7 +215,7 @@ export default function ContributePage() {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-black mb-1">コミュニティでディスカッション</h4>
-                  <p className="text-sm text-black">
+                  <p className="text-sm text-gray-66">
                     他のメンバーと意見交換し、より良い選択肢を一緒に探しましょう
                   </p>
                 </div>
@@ -243,7 +243,7 @@ export default function ContributePage() {
 
         {/* リンク集 */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-black mb-6">リンク集</h2>
+          <h2 className="text-2xl font-bold text-gray-66 mb-6">リンク集</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a
               href="https://github.com/hotaka0908/ai-necklace-product-plan/blob/main/CONTRIBUTING.md"
@@ -252,7 +252,7 @@ export default function ContributePage() {
               className="border-2 border-black p-6 hover:bg-gray-50 transition-colors"
             >
               <h3 className="text-lg font-bold text-black mb-2">📖 CONTRIBUTING.md</h3>
-              <p className="text-sm text-black">詳細な貢献ガイドライン</p>
+              <p className="text-sm text-gray-66">詳細な貢献ガイドライン</p>
             </a>
             <a
               href="https://github.com/hotaka0908/ai-necklace-product-plan/issues"
@@ -261,7 +261,7 @@ export default function ContributePage() {
               className="border-2 border-black p-6 hover:bg-gray-50 transition-colors"
             >
               <h3 className="text-lg font-bold text-black mb-2">🐛 Issues</h3>
-              <p className="text-sm text-black">バグ報告・機能要望</p>
+              <p className="text-sm text-gray-66">バグ報告・機能要望</p>
             </a>
             <a
               href="https://github.com/hotaka0908/ai-necklace-product-plan/pulls"
@@ -270,7 +270,7 @@ export default function ContributePage() {
               className="border-2 border-black p-6 hover:bg-gray-50 transition-colors"
             >
               <h3 className="text-lg font-bold text-black mb-2">🔀 Pull Requests</h3>
-              <p className="text-sm text-black">コードの変更提案</p>
+              <p className="text-sm text-gray-66">コードの変更提案</p>
             </a>
             <a
               href="https://github.com/hotaka0908/ai-necklace-product-plan/discussions"
@@ -279,7 +279,7 @@ export default function ContributePage() {
               className="border-2 border-black p-6 hover:bg-gray-50 transition-colors"
             >
               <h3 className="text-lg font-bold text-black mb-2">💬 Discussions</h3>
-              <p className="text-sm text-black">質問・アイデア・部品提案</p>
+              <p className="text-sm text-gray-66">質問・アイデア・部品提案</p>
             </a>
           </div>
         </section>
@@ -287,8 +287,8 @@ export default function ContributePage() {
         {/* CTA */}
         <section>
           <div className="bg-black text-white p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">今すぐ始めましょう</h2>
-            <p className="mb-6">
+            <h2 className="text-2xl font-bold text-white mb-4">今すぐ始めましょう</h2>
+            <p className="text-white mb-6">
               小さな貢献でも大歓迎です。一緒に素晴らしい製品を作りましょう。
             </p>
             <div className="flex gap-4 justify-center">

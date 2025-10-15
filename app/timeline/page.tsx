@@ -35,7 +35,7 @@ export default function TimelinePage() {
           <div className="flex items-center justify-between">
             <div>
               <h1 className="text-3xl font-bold text-black">開発の遍歴</h1>
-              <p className="text-black mt-2">進化の過程をたどる</p>
+              <p className="text-gray-66 mt-2">進化の過程をたどる</p>
             </div>
             <div className="flex gap-3">
               <Link
@@ -59,11 +59,11 @@ export default function TimelinePage() {
         {/* フィルター */}
         <section className="mb-8">
           <div className="bg-white border-2 border-black p-6">
-            <h2 className="text-lg font-bold text-black mb-4">フィルター</h2>
+            <h2 className="text-lg font-bold text-gray-66 mb-4">フィルター</h2>
             <div className="grid md:grid-cols-2 gap-6">
               {/* 製品フィルター */}
               <div>
-                <label className="block text-sm font-bold text-black mb-2">製品</label>
+                <label className="block text-sm font-bold text-gray-66 mb-2">製品</label>
                 <select
                   value={selectedProduct}
                   onChange={(e) => setSelectedProduct(e.target.value)}
@@ -78,7 +78,7 @@ export default function TimelinePage() {
 
               {/* カテゴリフィルター */}
               <div>
-                <label className="block text-sm font-bold text-black mb-2">カテゴリ</label>
+                <label className="block text-sm font-bold text-gray-66 mb-2">カテゴリ</label>
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value as MilestoneCategory | 'all')}
@@ -99,25 +99,25 @@ export default function TimelinePage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                 <div className="border border-black p-3">
                   <div className="text-2xl font-bold text-black">{allMilestones.length}</div>
-                  <div className="text-xs text-black mt-1">総マイルストーン数</div>
+                  <div className="text-xs text-gray-66 mt-1">総マイルストーン数</div>
                 </div>
                 <div className="border border-black p-3">
                   <div className="text-2xl font-bold text-black">
                     {allMilestones.filter((m) => m.productId === 'ai-necklace').length}
                   </div>
-                  <div className="text-xs text-black mt-1">AIネックレス</div>
+                  <div className="text-xs text-gray-66 mt-1">AIネックレス</div>
                 </div>
                 <div className="border border-black p-3">
                   <div className="text-2xl font-bold text-black">
                     {allMilestones.filter((m) => m.productId === 'fan-monitor').length}
                   </div>
-                  <div className="text-xs text-black mt-1">扇子型モニター</div>
+                  <div className="text-xs text-gray-66 mt-1">扇子型モニター</div>
                 </div>
                 <div className="border border-black p-3">
                   <div className="text-2xl font-bold text-black">
                     {new Date().getFullYear() - 2025 + 1}
                   </div>
-                  <div className="text-xs text-black mt-1">開発期間（年）</div>
+                  <div className="text-xs text-gray-66 mt-1">開発期間（年）</div>
                 </div>
               </div>
             </div>
@@ -128,7 +128,7 @@ export default function TimelinePage() {
         <section>
           {timelineYears.length === 0 ? (
             <div className="text-center py-12 border-2 border-black">
-              <p className="text-black">該当するマイルストーンが見つかりませんでした。</p>
+              <p className="text-gray-66">該当するマイルストーンが見つかりませんでした。</p>
             </div>
           ) : (
             <div className="space-y-12">
@@ -151,7 +151,7 @@ export default function TimelinePage() {
                           {/* ヘッダー */}
                           <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                             <div className="flex-1">
-                              <div className="text-sm text-black font-bold mb-1">
+                              <div className="text-sm text-gray-3d font-bold mb-1">
                                 {formatDate(milestone.date)}
                               </div>
                               <h3 className="text-xl font-bold text-black">{milestone.title}</h3>
@@ -178,15 +178,15 @@ export default function TimelinePage() {
                           </div>
 
                           {/* 説明 */}
-                          <p className="text-black mb-4">{milestone.description}</p>
+                          <p className="text-gray-66 mb-4">{milestone.description}</p>
 
                           {/* 詳細 */}
                           {milestone.details && milestone.details.length > 0 && (
                             <div className="bg-gray-50 border border-black p-4 mb-4">
-                              <h4 className="font-bold text-black mb-2 text-sm">詳細</h4>
+                              <h4 className="font-bold text-gray-66 mb-2 text-sm">詳細</h4>
                               <ul className="space-y-1">
                                 {milestone.details.map((detail, i) => (
-                                  <li key={i} className="text-sm text-black flex items-start">
+                                  <li key={i} className="text-sm text-gray-3d flex items-start">
                                     <span className="mr-2">•</span>
                                     <span>{detail}</span>
                                   </li>
@@ -224,8 +224,8 @@ export default function TimelinePage() {
         {/* CTA */}
         <section className="mt-12">
           <div className="bg-black text-white p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">次のマイルストーンを一緒に作りませんか？</h2>
-            <p className="mb-6">
+            <h2 className="text-2xl font-bold text-white mb-4">次のマイルストーンを一緒に作りませんか？</h2>
+            <p className="text-white mb-6">
               あなたのアイデアや技術で、このプロジェクトをさらに前進させることができます。
             </p>
             <div className="flex gap-4 justify-center">

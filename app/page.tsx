@@ -26,7 +26,7 @@ export default function Home() {
               <h1 className="text-3xl font-bold text-black">
                 プロダクト計画
               </h1>
-              <p className="text-black mt-2">
+              <p className="text-gray-66 mt-2">
                 革新的な製品で世界を変える
               </p>
             </div>
@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* Main Content */}
       <main className="max-w-5xl mx-auto px-4 py-12">
-        <h2 className="text-2xl font-bold text-black mb-8">製品一覧</h2>
+        <h2 className="text-2xl font-bold text-gray-66 mb-8">製品一覧</h2>
 
         <div className="grid md:grid-cols-2 gap-6">
           {products.map((product) => (
@@ -68,12 +68,12 @@ export default function Home() {
               <h3 className="text-xl font-bold text-black mb-2">
                 {product.name}
               </h3>
-              <p className="text-black mb-4">
+              <p className="text-gray-66 mb-4">
                 {product.description}
               </p>
               <ul className="space-y-1">
                 {product.features.map((feature, index) => (
-                  <li key={index} className="text-black text-sm">
+                  <li key={index} className="text-gray-3d text-sm">
                     • {feature}
                   </li>
                 ))}
@@ -88,8 +88,8 @@ export default function Home() {
         {/* CTA Section */}
         <section className="mt-16 mb-12">
           <div className="bg-black text-white p-8 text-center">
-            <h2 className="text-2xl font-bold mb-4">オープンに開発しています</h2>
-            <p className="mb-6">
+            <h2 className="text-2xl font-bold text-white mb-4">オープンに開発しています</h2>
+            <p className="text-white mb-6">
               ソフトウェアもハードウェアも、すべての開発状況を公開しています。
               <br />
               あなたの知識と経験で、より良い製品を一緒に作りませんか？
@@ -115,7 +115,7 @@ export default function Home() {
         <section className="mb-12">
           <div className="border-2 border-black p-6 text-center">
             <h3 className="text-xl font-bold text-black mb-3">GitHubで開発中</h3>
-            <p className="text-black mb-4">
+            <p className="text-gray-66 mb-4">
               プルリクエスト、部品提案、バグ報告など、どんな貢献も歓迎します
             </p>
             <a
@@ -130,7 +130,7 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-16 text-center text-black pb-8">
+        <footer className="mt-16 text-center text-gray-3d pb-8">
           <p className="text-sm">
             © 2025 Product Planning
           </p>
