@@ -178,7 +178,7 @@ export default function TimelinePage() {
                           </div>
 
                           {/* 説明 */}
-                          <p className="text-gray-66 mb-4">{milestone.description}</p>
+                          <p className="text-black mb-4">{milestone.description}</p>
 
                           {/* 詳細 */}
                           {milestone.details && milestone.details.length > 0 && (

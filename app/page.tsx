@@ -68,7 +68,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-black mb-2">
                 {product.name}
               </h3>
-              <p className="text-gray-66 mb-4">
+              <p className="text-black mb-4">
                 {product.description}
               </p>
               <ul className="space-y-1">
@@ -115,7 +115,7 @@ export default function Home() {
         <section className="mb-12">
           <div className="border-2 border-black p-6 text-center">
             <h3 className="text-xl font-bold text-black mb-3">GitHubで開発中</h3>
-            <p className="text-gray-66 mb-4">
+            <p className="text-black mb-4">
               プルリクエスト、部品提案、バグ報告など、どんな貢献も歓迎します
             </p>
             <a
