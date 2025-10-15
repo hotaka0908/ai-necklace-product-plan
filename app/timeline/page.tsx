@@ -186,7 +186,7 @@ export default function TimelinePage() {
                               <h4 className="font-bold text-gray-66 mb-2 text-sm">詳細</h4>
                               <ul className="space-y-1">
                                 {milestone.details.map((detail, i) => (
-                                  <li key={i} className="text-sm text-gray-3d flex items-start">
+                                  <li key={i} className="text-sm text-black flex items-start">
                                     <span className="mr-2">•</span>
                                     <span>{detail}</span>
                                   </li>
