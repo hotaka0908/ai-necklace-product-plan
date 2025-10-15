@@ -61,7 +61,7 @@ export default function StatusPage() {
                       style={{ width: `${product.progress}%` }}
                     />
                   </div>
-                  <p className="text-xs text-gray-3d mt-2 text-right">{product.progress}% 完了</p>
+                  <p className="text-xs text-black mt-2 text-right">{product.progress}% 完了</p>
                 </div>
               ))}
             </div>
@@ -78,15 +78,15 @@ export default function StatusPage() {
                 <dl className="space-y-2">
                   <div className="flex justify-between">
                     <dt className="text-gray-66">リポジトリ:</dt>
-                    <dd className="font-mono text-sm text-gray-3d">{softwareStatus.repo}</dd>
+                    <dd className="font-mono text-sm text-black">{softwareStatus.repo}</dd>
                   </div>
                   <div className="flex justify-between">
                     <dt className="text-gray-66">ブランチ:</dt>
-                    <dd className="font-mono text-sm text-gray-3d">{softwareStatus.branch}</dd>
+                    <dd className="font-mono text-sm text-black">{softwareStatus.branch}</dd>
                   </div>
                   <div className="flex justify-between">
                     <dt className="text-gray-66">最終更新:</dt>
-                    <dd className="text-sm text-gray-3d">{softwareStatus.lastCommit}</dd>
+                    <dd className="text-sm text-black">{softwareStatus.lastCommit}</dd>
                   </div>
                 </dl>
               </div>
@@ -95,11 +95,11 @@ export default function StatusPage() {
                 <dl className="space-y-2">
                   <div className="flex justify-between">
                     <dt className="text-gray-66">オープンなIssue:</dt>
-                    <dd className="text-gray-3d">{softwareStatus.openIssues} 件</dd>
+                    <dd className="text-black">{softwareStatus.openIssues} 件</dd>
                   </div>
                   <div className="flex justify-between">
                     <dt className="text-gray-66">オープンなPR:</dt>
-                    <dd className="text-gray-3d">{softwareStatus.openPRs} 件</dd>
+                    <dd className="text-black">{softwareStatus.openPRs} 件</dd>
                   </div>
                 </dl>
               </div>
@@ -154,7 +154,7 @@ export default function StatusPage() {
                       <p className="text-sm text-gray-66 mt-1">
                         現在のフェーズ: {bom.phase}
                       </p>
-                      <p className="text-xs text-gray-3d mt-1">
+                      <p className="text-xs text-black mt-1">
                         最終更新: {bom.lastUpdated}
                       </p>
                     </div>
@@ -167,7 +167,7 @@ export default function StatusPage() {
                   </div>
 
                   <div className="mb-4">
-                    <div className="flex justify-between text-sm text-gray-66 mb-2">
+                    <div className="flex justify-between text-sm text-black mb-2">
                       <span>部品選定の進捗</span>
                       <span>
                         {decidedComponents} / {totalComponents} 完了
